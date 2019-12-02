@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Realcoin Core consensus library
+Description: Library for the Realcoin consensus protocol.
+Version: 1.0.0
+Libs: -L${libdir} -lrealcoinconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto
